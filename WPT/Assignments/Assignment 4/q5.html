@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q5</title>
+    </head>
+    <body>
+        <script>
+            function fetchData(url, callback) {
+    setTimeout(() => {
+        const didErrorOccur = Math.random() < 0.5; // 50% chance of error
+
+        if (didErrorOccur) {
+            const errorMessage = `Error fetching data from ${url}`;
+            callback(new Error(errorMessage));
+        } else {
+            const response = `Fetched data from ${url}`;
+            callback(null, response);
+        }
+    }, 2000); // Simulate a 2-second delay
+}
+
+function processData(data, callback) {
+    setTimeout(() => {
+        // Simulate processing the data
+        const processedData = `Processed: ${data}`;
+        callback(processedData);
+    }, 1000); // Simulate a 1-second delay
+}
+
+// Usage example:
+fetchData('https://example.com/api/data', (error, response) => {
+    if (error) {
+        console.error(error.message);
+    } else {
+        console.log(response);
+        processData(response, (processedData) => {
+            console.log(processedData);
+        });
+    }
+});
+
+        </script>
+    </body>
+</html>

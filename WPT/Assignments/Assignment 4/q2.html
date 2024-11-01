@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 2</title>
+    </head>
+    <body>
+        <script>
+            function forEachElement(arr,callback){
+                for(let i=0;i<arr.length;i++){
+                    callback(arr[i],i);
+                }
+            }
+            const arr=[1,2,3,4];
+            forEachElement(arr,function(element,i){
+                console.log(`${i}:${element*2}`);
+            });
+
+
+            
+        </script>
+    </body>
+</html>

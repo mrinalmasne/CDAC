@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Q4
+        </title>
+    </head>
+    <script>
+        function fetchData(url, callback) {
+    // Simulate network delay with setTimeout
+    setTimeout(() => {
+        // Simulate a random error occurring
+        const didErrorOccur = Math.random() < 0.5; // 50% chance of error
+
+        if (didErrorOccur) {
+            // Create an error message
+            const errorMessage = `Error fetching data from ${url}`;
+            // Call the callback function with the error message
+            callback(new Error(errorMessage));
+        } else {
+            // Create a simulated response string
+            const response = `Fetched data from ${url}`;
+            // Call the callback function with the response
+            callback(null, response);
+        }
+    }, 2000); // Simulate a 2-second delay
+}
+
+// Usage example:
+fetchData('https://example.com/api/data', (error, response) => {
+    if (error) {
+        // Log the error message if an error occurs
+        console.error(error.message);
+    } else {
+        // Log the response if no error occurs
+        console.log(response);
+    }
+});
+
+    </script>
+</html>

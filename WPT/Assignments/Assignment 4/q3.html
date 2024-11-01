@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Que 3</title>
+    </head>
+    <body>
+        <script>
+            function fetchData(url, callback) {
+    // Simulate network delay with setTimeout
+    setTimeout(() => {
+        // Create a simulated response string
+        const response = `Fetched data from ${url}`;
+        
+        // Call the callback function with the response
+        callback(response);
+    }, 2000); // Simulate a 2-second delay
+}
+
+// Usage example:
+fetchData('https://example.com/api/data', (response) => {
+    console.log(response);
+});
+
+        </script>
+    </body>
+</html>
