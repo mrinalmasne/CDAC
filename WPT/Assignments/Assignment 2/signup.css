@@ -1,0 +1,99 @@
+/* .container{
+    background-color:white;
+    width:40px;
+    height:500px;
+    margin: 60px auto; 
+    padding: auto;
+    border: solid;
+    border-color: rgb(95, 111, 160);
+} */
+nav{
+    width:100%;
+    height:100px;
+  
+}
+#logo{
+width:70px;
+height:90px
+}
+#nav-links {
+    position:absolute;
+    right:40px;
+    top:50px;
+}
+#brand{
+   position:absolute;
+   top:50px;
+}
+#nav-links a{
+        margin-right: 30px;
+        text-decoration: none;
+        font-size: 18px;
+        border-width: 1.5px;
+        border-color: #f7a7ef;
+        background-color:white;
+        color: black;
+        border-style: solid;
+        padding: 10px 20px;
+        border-radius: 25px;
+        transition: background 0.4s;
+     }
+#nav-links a:hover{
+    background-color: #f7a7ef;
+    color: rgb(2, 7, 54);
+}
+.container {
+    margin:auto;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 350px;
+    text-align: center;
+}
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    text-align: center;
+    padding-top: 25px;
+}
+body{
+    margin: 0;
+    height: 100%;
+    background-image:url(webImg/signupbg.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+}
+input{
+    width:80%;
+    height:30px;
+    text-align: left;
+    margin:20px 30px 20px 40px ;
+    
+    border-top: 0cap;
+    border-left: 0cap;
+    border-right: 0cap;
+}
+p{
+    text-align: center; 
+}
+#text{
+    margin-top: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+button{
+    margin-top: 20px;
+    text-align: center;
+    padding:auto;
+    height: 40px;
+    width: 180px;
+    background-color: black;
+    color: aliceblue;
+}
+button:hover{
+    background-color: brown;
+}
